@@ -1,0 +1,23 @@
+**/.classpath
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.project
+**/.settings
+**/.toolstarget
+**/.vs
+**/.vscode
+**/*.*proj.user
+**/*.dbmdl
+**/*.jfm
+**/bin
+**/obj
+**/node_modules
+**/npm-debug.log
+**/Dockerfile*
+**/docker-compose*
+LICENSE
+README.md
+# El front Angular tiene su propio contexto (./ventas-web) y su propio .dockerignore
+ventas-web

@@ -1,0 +1,481 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|solutionrelative:src\\ventas.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|solutionrelative:src\\ventas.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.web\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|solutionrelative:src\\ventas.web\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.webapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|solutionrelative:src\\ventas.webapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1797F0CA-453B-449F-8BC2-74E19C1CDB21}|docker-compose.dcproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{1797F0CA-453B-449F-8BC2-74E19C1CDB21}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|solutionrelative:src\\ventas.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C923D3A2-0A7C-21FC-ED8F-0A7F216E337B}|src\\Ventas.Web\\Ventas.Web.csproj|solutionrelative:src\\ventas.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|src{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|src{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|solutionrelative:.env.example||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|src{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|src{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1797F0CA-453B-449F-8BC2-74E19C1CDB21}|docker-compose.dcproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1797F0CA-453B-449F-8BC2-74E19C1CDB21}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1797F0CA-453B-449F-8BC2-74E19C1CDB21}|docker-compose.dcproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{1797F0CA-453B-449F-8BC2-74E19C1CDB21}|docker-compose.dcproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|src{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|src{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|solutionrelative:Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.webapi\\ventas.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|solutionrelative:src\\ventas.webapi\\ventas.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|solutionrelative:src\\ventas.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|solutionrelative:src\\ventas.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.infrastructure\\persistence\\storedprocedureexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|solutionrelative:src\\ventas.infrastructure\\persistence\\storedprocedureexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.infrastructure\\persistence\\sqlparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|solutionrelative:src\\ventas.infrastructure\\persistence\\sqlparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|solutionrelative:src\\ventas.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.webapi\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|solutionrelative:src\\ventas.webapi\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.infrastructure\\persistence\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|solutionrelative:src\\ventas.infrastructure\\persistence\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.webapi\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66186F03-354E-6408-24B5-027E8EEFD0B4}|src\\Ventas.WebApi\\Ventas.WebApi.csproj|solutionrelative:src\\ventas.webapi\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40B98BF-9BAD-A7C5-5083-4CD6C54192DD}|src\\Ventas.Application\\Ventas.Application.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.application\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40B98BF-9BAD-A7C5-5083-4CD6C54192DD}|src\\Ventas.Application\\Ventas.Application.csproj|solutionrelative:src\\ventas.application\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40B98BF-9BAD-A7C5-5083-4CD6C54192DD}|src\\Ventas.Application\\Ventas.Application.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.application\\dtos\\productodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40B98BF-9BAD-A7C5-5083-4CD6C54192DD}|src\\Ventas.Application\\Ventas.Application.csproj|solutionrelative:src\\ventas.application\\dtos\\productodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.infrastructure\\persistence\\ventasdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|solutionrelative:src\\ventas.infrastructure\\persistence\\ventasdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.infrastructure\\repositories\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|solutionrelative:src\\ventas.infrastructure\\repositories\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40B98BF-9BAD-A7C5-5083-4CD6C54192DD}|src\\Ventas.Application\\Ventas.Application.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.application\\features\\productos\\productocommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40B98BF-9BAD-A7C5-5083-4CD6C54192DD}|src\\Ventas.Application\\Ventas.Application.csproj|solutionrelative:src\\ventas.application\\features\\productos\\productocommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|c:\\users\\gabri\\source\\repos\\bac\\prueba\\backend\\src\\ventas.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55C9087-4406-8B04-15DF-18ACF8937545}|src\\Ventas.Infrastructure\\Ventas.Infrastructure.csproj|solutionrelative:src\\ventas.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Ventas.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\appsettings.json",
+              "RelativeToolTip": "src\\Ventas.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-04T16:23:02.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\Program.cs",
+              "RelativeToolTip": "src\\Ventas.Web\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAD4vxUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T16:22:48.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "docker-compose",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\docker-compose.dcproj",
+              "RelativeDocumentMoniker": "docker-compose.dcproj",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\docker-compose.dcproj",
+              "RelativeToolTip": "docker-compose.dcproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-04T17:10:17.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\Ventas.Web\\Dockerfile",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\Dockerfile",
+              "RelativeToolTip": "src\\Ventas.Web\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-04T16:23:12.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\Ventas.WebApi\\Dockerfile",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Dockerfile",
+              "RelativeToolTip": "src\\Ventas.WebApi\\Dockerfile",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-04T16:42:39.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "src\\Ventas.Web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T21:34:17.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-10-04T16:58:23.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": ".env.example",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\.env.example",
+              "RelativeDocumentMoniker": ".env.example",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\.env.example",
+              "RelativeToolTip": ".env.example",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-04T17:06:32.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "src\\Ventas.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T21:33:52.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "ViewState": "AgIAALoBAAAAAAAAAAAAwNIBAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-10-04T17:12:55.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-04T16:56:42.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-04T16:56:27.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-04T16:43:51.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Ventas.WebApi.csproj",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Ventas.WebApi.csproj",
+              "RelativeDocumentMoniker": "src\\Ventas.WebApi\\Ventas.WebApi.csproj",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Ventas.WebApi.csproj",
+              "RelativeToolTip": "src\\Ventas.WebApi\\Ventas.WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-04T16:39:21.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.WebApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\Ventas.WebApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:03:54.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SqlParams.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Persistence\\SqlParams.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Infrastructure\\Persistence\\SqlParams.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Persistence\\SqlParams.cs",
+              "RelativeToolTip": "src\\Ventas.Infrastructure\\Persistence\\SqlParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T15:58:56.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.WebApi\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "src\\Ventas.WebApi\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:02:55.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Ventas.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\appsettings.json",
+              "RelativeToolTip": "src\\Ventas.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-03T15:38:22.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StoredProcedureExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Persistence\\StoredProcedureExecutor.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Infrastructure\\Persistence\\StoredProcedureExecutor.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Persistence\\StoredProcedureExecutor.cs",
+              "RelativeToolTip": "src\\Ventas.Infrastructure\\Persistence\\StoredProcedureExecutor.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T15:59:00.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Persistence\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Infrastructure\\Persistence\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Persistence\\Entities\\Usuario.cs",
+              "RelativeToolTip": "src\\Ventas.Infrastructure\\Persistence\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T02:38:39.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Program.cs",
+              "RelativeToolTip": "src\\Ventas.WebApi\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAD4vyoAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T15:33:55.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ReportesController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Controllers\\ReportesController.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.WebApi\\Controllers\\ReportesController.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.WebApi\\Controllers\\ReportesController.cs",
+              "RelativeToolTip": "src\\Ventas.WebApi\\Controllers\\ReportesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:04:33.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Application\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Application\\DTOs\\AuthDtos.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Application\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "src\\Ventas.Application\\DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA5wAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:02:43.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductoDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Application\\DTOs\\ProductoDtos.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Application\\DTOs\\ProductoDtos.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Application\\DTOs\\ProductoDtos.cs",
+              "RelativeToolTip": "src\\Ventas.Application\\DTOs\\ProductoDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:02:39.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VentasDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Persistence\\VentasDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Infrastructure\\Persistence\\VentasDbContext.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Persistence\\VentasDbContext.cs",
+              "RelativeToolTip": "src\\Ventas.Infrastructure\\Persistence\\VentasDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:02:18.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Repositories\\ProductoRepository.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Infrastructure\\Repositories\\ProductoRepository.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\Repositories\\ProductoRepository.cs",
+              "RelativeToolTip": "src\\Ventas.Infrastructure\\Repositories\\ProductoRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T16:01:07.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProductoCommands.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Application\\Features\\Productos\\ProductoCommands.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Application\\Features\\Productos\\ProductoCommands.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Application\\Features\\Productos\\ProductoCommands.cs",
+              "RelativeToolTip": "src\\Ventas.Application\\Features\\Productos\\ProductoCommands.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAUwEUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T15:59:23.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Ventas.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Gabri\\source\\repos\\BAC\\Prueba\\backend\\src\\Ventas.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Ventas.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T15:36:29.422Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

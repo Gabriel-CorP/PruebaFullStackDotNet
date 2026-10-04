@@ -1,0 +1,39 @@
+@model VentaDto
+<div class="d-flex justify-content-between align-items-start mb-3">
+    <div>
+        <div class="fs-4 fw-bold text-primary">@Model.NumeroVenta</div>
+        <div class="text-muted">@Model.Fecha.ToString("dd/MM/yyyy HH:mm") · @Model.Usuario</div>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-sm align-middle">
+        <thead>
+        <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th class="text-end">Cant.</th>
+            <th class="text-end">Precio</th>
+            <th class="text-end">Subtotal</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var d in Model.Detalle)
+        {
+            <tr>
+                <td>@d.Codigo</td>
+                <td>@d.Producto</td>
+                <td class="text-end">@d.Cantidad</td>
+                <td class="text-end">@d.PrecioUnitario.ToString("C2")</td>
+                <td class="text-end">@d.Subtotal.ToString("C2")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<div class="text-end lh-lg">
+    <div>Subtotal: @Model.Subtotal.ToString("C2")</div>
+    <div>IVA: @Model.Iva.ToString("C2")</div>
+    <div class="fs-5 fw-bold">Total: @Model.Total.ToString("C2")</div>
+</div>

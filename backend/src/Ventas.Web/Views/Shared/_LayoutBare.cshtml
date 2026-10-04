@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Sistema de Ventas</title>
+    @await Html.PartialAsync("_Styles")
+</head>
+<body class="bare">
+    @RenderBody()
+    @await Html.PartialAsync("_Flash")
+    @await Html.PartialAsync("_Scripts")
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

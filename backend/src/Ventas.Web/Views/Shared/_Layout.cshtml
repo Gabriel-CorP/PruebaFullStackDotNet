@@ -1,0 +1,72 @@
+@using Microsoft.AspNetCore.Antiforgery
+@inject IAntiforgery Antiforgery
+@functions {
+    string Active(string controller, string? action = null)
+    {
+        var c = (string?)ViewContext.RouteData.Values["controller"];
+        var a = (string?)ViewContext.RouteData.Values["action"];
+        return c == controller && (action is null || a == action) ? "active" : "";
+    }
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content="@Antiforgery.GetAndStoreTokens(Context).RequestToken" />
+    <title>@ViewData["Title"] - Sistema de Ventas</title>
+    @await Html.PartialAsync("_Styles")
+</head>
+<body>
+<div class="app-shell">
+    <aside class="offcanvas-lg offcanvas-start app-sidebar" tabindex="-1" id="menu" aria-labelledby="menuLabel">
+        <div class="offcanvas-header d-lg-none">
+            <h5 class="offcanvas-title" id="menuLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#menu" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column p-0">
+            <a class="brand" asp-controller="Home" asp-action="Index">
+                <i class="bi bi-cart3"></i> <span>VENTAS</span>
+            </a>
+
+            <nav class="nav flex-column px-3">
+                <div class="nav-section">Ventas</div>
+                <a class="nav-link @Active("Ventas", "Nueva")" asp-controller="Ventas" asp-action="Nueva"><i class="bi bi-cart-plus"></i> Nueva venta</a>
+
+                @if (User.IsInRole("Administrador"))
+                {
+                    <div class="nav-section">Administración</div>
+                    <a class="nav-link @Active("Productos")" asp-controller="Productos" asp-action="Index"><i class="bi bi-box-seam"></i> Productos</a>
+                    <a class="nav-link @Active("Ventas", "Historial")" asp-controller="Ventas" asp-action="Historial"><i class="bi bi-file-earmark-bar-graph"></i> Ventas y reportes</a>
+                }
+            </nav>
+        </div>
+    </aside>
+
+    <div class="app-main">
+        <header class="app-topbar">
+            <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <div class="text-end lh-sm d-none d-sm-block">
+                    <div class="fw-semibold">@User.Identity?.Name</div>
+                    <span class="badge @(User.IsInRole("Administrador") ? "text-bg-primary" : "text-bg-secondary")">@(User.IsInRole("Administrador") ? "Administrador" : "Operador")</span>
+                </div>
+                <form asp-controller="Account" asp-action="Logout" method="post">
+                    <button type="submit" class="btn btn-outline-secondary" title="Cerrar sesión"><i class="bi bi-box-arrow-right"></i> Salir</button>
+                </form>
+            </div>
+        </header>
+
+        <main class="app-content">
+            @RenderBody()
+        </main>
+    </div>
+</div>
+
+@await Html.PartialAsync("_Flash")
+@await Html.PartialAsync("_Scripts")
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

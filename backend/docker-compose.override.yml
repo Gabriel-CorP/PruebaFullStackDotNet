@@ -1,0 +1,23 @@
+# Configuración de desarrollo: Visual Studio y `docker compose up` lo combinan automáticamente con docker-compose.yml
+services:
+  db:
+    ports:
+      - "1434:1433"        # SSMS: localhost,1434  (1434 evita chocar con otro SQL Server en 1433)
+
+  api:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development      # habilita Swagger
+      ASPNETCORE_HTTP_PORTS: "8080"
+    ports:
+      - "8080:8080"        # http://localhost:8080/swagger
+
+  mvc:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    ports:
+      - "5100:8080"        # http://localhost:5100
+
+  front:
+    ports:
+      - "4200:80"          # http://localhost:4200 (solo con el perfil "angular")

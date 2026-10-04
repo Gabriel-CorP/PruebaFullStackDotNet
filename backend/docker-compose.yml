@@ -1,0 +1,64 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:-Admin123!!}
+    volumes:
+      - sqldata:/var/opt/mssql
+    healthcheck:
+      test: /opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P "$$MSSQL_SA_PASSWORD" -Q "SET NOCOUNT ON; IF EXISTS (SELECT 1 FROM sys.databases WHERE state <> 0) THROW 50000, 'Bases de datos iniciando', 1;" -b -o /dev/null
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+
+  # Contenedor de un solo uso: crea VentasDB con el script SQL si todavía no existe (termina solo)
+  db-init:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:-Admin123!!}
+    volumes:
+      - ./sql:/sql:ro
+    # tr -d '\r': tolera que init.sh se haya guardado con saltos de línea de Windows (CRLF)
+    entrypoint: ["/bin/bash", "-c", "tr -d '\\r' < /sql/init.sh > /tmp/init.sh && bash /tmp/init.sh"]
+    restart: "no"
+
+  api:
+    image: ${DOCKER_REGISTRY-}ventas-api
+    build:
+      context: .
+      dockerfile: src/Ventas.WebApi/Dockerfile
+    depends_on:
+      db-init:
+        condition: service_completed_successfully
+    environment:
+      ConnectionStrings__VentasDb: "Server=db;Database=VentasDB;User ID=sa;Password=${MSSQL_SA_PASSWORD:-Admin123!!};TrustServerCertificate=True"
+      Jwt__Key: ${JWT_KEY:-ClaveSecretaMuySeguraxddsdsfdfsffdsdfsdd}
+      Jwt__Issuer: VentasApi
+      Jwt__Audience: VentasWeb
+      Jwt__ExpirationMinutes: "60"
+
+  mvc:
+    image: ${DOCKER_REGISTRY-}ventas-mvc
+    build:
+      context: .
+      dockerfile: src/Ventas.Web/Dockerfile
+    depends_on:
+      - api
+    environment:
+      Api__BaseUrl: http://api:8080
+
+  # Angular (opcional): no arranca por defecto. Activar con COMPOSE_PROFILES=angular en .env
+  front:
+    image: ${DOCKER_REGISTRY-}ventas-front
+    build: ../frontend/ventas-front
+    profiles: ["angular"]
+    depends_on:
+      - api
+
+volumes:
+  sqldata:

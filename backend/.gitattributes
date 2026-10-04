@@ -1,0 +1,2 @@
+# El script de init corre en Linux: debe tener saltos de línea LF
+*.sh text eol=lf

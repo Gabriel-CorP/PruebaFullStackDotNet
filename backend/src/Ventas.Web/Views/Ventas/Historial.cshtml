@@ -1,0 +1,88 @@
+@model HistorialViewModel
+@{
+    ViewData["Title"] = "Ventas y reportes";
+}
+<h1 class="h4 mb-3">Ventas realizadas y reportes</h1>
+
+<div class="card">
+    <div class="card-body">
+        <form method="get" class="row g-3 align-items-end mb-4">
+            <div class="col-sm-6 col-md-3">
+                <label class="form-label fw-semibold" for="desde">Desde</label>
+                <input type="date" id="desde" name="desde" class="form-control" value="@Model.Desde?.ToString("yyyy-MM-dd")" max="@DateTime.Today.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <label class="form-label fw-semibold" for="hasta">Hasta</label>
+                <input type="date" id="hasta" name="hasta" class="form-control" value="@Model.Hasta?.ToString("yyyy-MM-dd")" max="@DateTime.Today.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary"><i class="bi bi-search"></i> Buscar</button>
+                <a class="btn btn-link" asp-action="Historial">Limpiar</a>
+            </div>
+            <div class="col-auto ms-md-auto">
+                <a class="btn btn-danger" asp-controller="Reportes" asp-action="Pdf" asp-route-desde="@Model.Desde?.ToString("yyyy-MM-dd")" asp-route-hasta="@Model.Hasta?.ToString("yyyy-MM-dd")"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
+                <a class="btn btn-success" asp-controller="Reportes" asp-action="Excel" asp-route-desde="@Model.Desde?.ToString("yyyy-MM-dd")" asp-route-hasta="@Model.Hasta?.ToString("yyyy-MM-dd")"><i class="bi bi-file-earmark-excel"></i> Excel</a>
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead>
+                <tr>
+                    <th>N° Venta</th>
+                    <th>Fecha</th>
+                    <th>Usuario</th>
+                    <th class="text-end">Subtotal</th>
+                    <th class="text-end">IVA</th>
+                    <th class="text-end">Total</th>
+                    <th style="width: 4rem"></th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var v in Model.Ventas)
+                {
+                    <tr>
+                        <td class="fw-semibold">@v.NumeroVenta</td>
+                        <td>@v.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@v.Usuario</td>
+                        <td class="text-end">@v.Subtotal.ToString("C2")</td>
+                        <td class="text-end">@v.Iva.ToString("C2")</td>
+                        <td class="text-end fw-bold">@v.Total.ToString("C2")</td>
+                        <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-detalle="@v.Id" title="Ver detalle"><i class="bi bi-eye"></i></button></td>
+                    </tr>
+                }
+                @if (Model.Ventas.Count == 0)
+                {
+                    <tr><td colspan="7" class="text-center text-muted py-5">No hay ventas en el rango seleccionado.</td></tr>
+                }
+                </tbody>
+                @if (Model.Ventas.Count > 0)
+                {
+                    <tfoot>
+                    <tr class="fw-bold">
+                        <td colspan="5" class="text-end">Total del período (@Model.Ventas.Count ventas)</td>
+                        <td class="text-end text-primary">@Model.TotalPeriodo.ToString("C2")</td>
+                        <td></td>
+                    </tr>
+                    </tfoot>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalDetalle" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalle de venta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body" id="detalle-modal-body"></div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/historial.js" asp-append-version="true"></script>
+}

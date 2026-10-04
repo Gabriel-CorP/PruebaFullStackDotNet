@@ -1,0 +1,78 @@
+@model NuevaVentaViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = "Nueva venta";
+}
+<div id="pos" data-iva="@Model.IvaRate.ToString(CultureInfo.InvariantCulture)">
+    <h1 class="h4 mb-3">Nueva venta</h1>
+
+    <div class="row g-4">
+        <!-- Búsqueda + detalle -->
+        <div class="col-xl-8">
+            <div class="card">
+                <div class="card-body">
+                    <form id="form-buscar" class="input-group mb-4" autocomplete="off">
+                        <span class="input-group-text"><i class="bi bi-upc-scan"></i></span>
+                        <input id="codigo" type="text" class="form-control form-control-lg" placeholder="Digite el código del producto y presione Enter" autofocus />
+                        <button class="btn btn-primary" type="submit" id="btn-buscar"><i class="bi bi-plus-lg"></i> Agregar</button>
+                    </form>
+
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0">
+                            <thead>
+                            <tr>
+                                <th style="width: 7rem">Código</th>
+                                <th>Producto</th>
+                                <th class="text-end" style="width: 8rem">Precio</th>
+                                <th class="text-center" style="width: 11rem">Cantidad</th>
+                                <th class="text-end" style="width: 8rem">Subtotal</th>
+                                <th style="width: 3rem"></th>
+                            </tr>
+                            </thead>
+                            <tbody id="detalle-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resumen -->
+        <div class="col-xl-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="h5 mb-3">Resumen</h2>
+                    <div class="d-flex justify-content-between mb-2"><span>Artículos</span><span id="r-articulos">0</span></div>
+                    <div class="d-flex justify-content-between mb-2"><span>Subtotal</span><span id="r-subtotal">$0.00</span></div>
+                    <div class="d-flex justify-content-between mb-2"><span>IVA (@((Model.IvaRate * 100).ToString("0.##", CultureInfo.InvariantCulture))%)</span><span id="r-iva">$0.00</span></div>
+                    <hr />
+                    <div class="d-flex justify-content-between fs-4 fw-bold mb-4"><span>Total</span><span class="text-primary" id="r-total">$0.00</span></div>
+
+                    <div class="d-grid gap-2">
+                        <button id="btn-registrar" class="btn btn-primary btn-lg" type="button" disabled><i class="bi bi-check-lg"></i> Registrar venta</button>
+                        <button id="btn-limpiar" class="btn btn-outline-secondary" type="button" disabled><i class="bi bi-x-lg"></i> Limpiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Comprobante -->
+<div class="modal fade" id="modalComprobante" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="bi bi-check-circle-fill text-success"></i> Venta registrada</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body" id="comprobante-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><i class="bi bi-plus-lg"></i> Nueva venta</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/ventas.js" asp-append-version="true"></script>
+}

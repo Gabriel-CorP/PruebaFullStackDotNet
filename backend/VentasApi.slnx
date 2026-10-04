@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/src/">
+    <File Path=".dockerignore" />
+    <File Path=".env" />
+    <File Path=".env.example" />
+    <File Path=".gitattributes" />
+    <File Path="docker-compose.yml" />
+    <File Path="Dockerfile" />
+    <File Path="README.md" />
+    <Project Path="src/Ventas.Application/Ventas.Application.csproj" />
+    <Project Path="src/Ventas.Infrastructure/Ventas.Infrastructure.csproj" />
+    <Project Path="src/Ventas.Web/Ventas.Web.csproj" />
+    <Project Path="src/Ventas.WebApi/Ventas.WebApi.csproj" />
+  </Folder>
+  <Project Path="docker-compose.dcproj" Id="1797f0ca-453b-449f-8bc2-74e19c1cdb21">
+    <Build />
+  </Project>
+</Solution>

@@ -1,0 +1,69 @@
+@model ProductosIndexViewModel
+@{
+    ViewData["Title"] = "Productos";
+}
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+    <h1 class="h4 mb-0">Mantenimiento de productos</h1>
+    <a class="btn btn-primary" asp-action="Create"><i class="bi bi-plus-lg"></i> Nuevo producto</a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <form method="get" class="row g-2 mb-3">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input type="search" name="q" value="@Model.Busqueda" class="form-control" placeholder="Buscar por código o nombre..." />
+                </div>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                @if (!string.IsNullOrEmpty(Model.Busqueda))
+                {
+                    <a class="btn btn-link" asp-action="Index">Limpiar</a>
+                }
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th class="text-end">Precio</th>
+                    <th class="text-center">Stock</th>
+                    <th style="width: 7rem"></th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var p in Model.Productos)
+                {
+                    var stockClass = p.Stock == 0 ? "text-bg-danger" : p.Stock < 10 ? "text-bg-warning" : "text-bg-success";
+                    <tr>
+                        <td class="fw-semibold">@p.Codigo</td>
+                        <td>@p.Nombre</td>
+                        <td class="text-muted">@p.Descripcion</td>
+                        <td class="text-end">@p.Precio.ToString("C2")</td>
+                        <td class="text-center"><span class="badge @stockClass">@p.Stock</span></td>
+                        <td class="text-end text-nowrap">
+                            <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@p.Id" title="Editar"><i class="bi bi-pencil"></i></a>
+                            <form asp-action="Delete" asp-route-id="@p.Id" method="post" class="d-inline">
+                                <button type="button" class="btn btn-sm btn-outline-danger" title="Eliminar"
+                                        data-confirm-delete data-name="@p.Nombre" data-code="@p.Codigo">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+                @if (Model.Productos.Count == 0)
+                {
+                    <tr><td colspan="6" class="text-center text-muted py-5">No hay productos para mostrar.</td></tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

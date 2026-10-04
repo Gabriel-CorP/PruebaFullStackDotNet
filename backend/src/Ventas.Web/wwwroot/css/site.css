@@ -1,0 +1,68 @@
+/* ---------- Tema rojo (sobrescribe el azul de Bootstrap) ---------- */
+:root {
+    --bs-primary: #dc2626;
+    --bs-primary-rgb: 220, 38, 38;
+    --bs-link-color: #dc2626;
+    --bs-link-color-rgb: 220, 38, 38;
+    --bs-link-hover-color: #b91c1c;
+    --bs-link-hover-color-rgb: 185, 28, 28;
+    --bs-body-bg: #f8f9fb;
+    --sidebar-w: 260px;
+}
+
+.btn-primary {
+    --bs-btn-bg: #dc2626;
+    --bs-btn-border-color: #dc2626;
+    --bs-btn-hover-bg: #b91c1c;
+    --bs-btn-hover-border-color: #b91c1c;
+    --bs-btn-active-bg: #991b1b;
+    --bs-btn-active-border-color: #991b1b;
+    --bs-btn-disabled-bg: #dc2626;
+    --bs-btn-disabled-border-color: #dc2626;
+    --bs-btn-focus-shadow-rgb: 220, 38, 38;
+}
+.btn-outline-primary {
+    --bs-btn-color: #dc2626;
+    --bs-btn-border-color: #dc2626;
+    --bs-btn-hover-bg: #dc2626;
+    --bs-btn-hover-border-color: #dc2626;
+    --bs-btn-active-bg: #b91c1c;
+    --bs-btn-active-border-color: #b91c1c;
+    --bs-btn-disabled-color: #dc2626;
+    --bs-btn-disabled-border-color: #dc2626;
+}
+.text-bg-primary { background-color: #dc2626 !important; }
+.text-primary { color: #dc2626 !important; }
+.form-control:focus, .form-select:focus {
+    border-color: #f87171;
+    box-shadow: 0 0 0 .25rem rgba(220, 38, 38, .2);
+}
+
+/* ---------- Estructura ---------- */
+.app-shell { display: flex; min-height: 100vh; }
+.app-sidebar { --bs-offcanvas-width: var(--sidebar-w); background: #fff; border-right: 1px solid #e5e7eb; }
+@media (min-width: 992px) { .app-sidebar { width: var(--sidebar-w); flex: 0 0 var(--sidebar-w); } }
+.app-sidebar .brand {
+    display: flex; align-items: center; gap: .6rem; padding: 1.25rem 1.5rem;
+    font-weight: 700; font-size: 1.25rem; letter-spacing: .08em; color: #111827; text-decoration: none;
+}
+.app-sidebar .brand i { color: #dc2626; font-size: 1.6rem; }
+.nav-section { margin: 1.25rem 0 .4rem; padding: 0 .75rem; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #9ca3af; }
+.app-sidebar .nav-link { display: flex; align-items: center; gap: .65rem; padding: .6rem .75rem; border-radius: .6rem; color: #374151; font-weight: 500; }
+.app-sidebar .nav-link:hover { background: #fef2f2; color: #b91c1c; }
+.app-sidebar .nav-link.active { background: #fee2e2; color: #b91c1c; }
+
+.app-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.app-topbar { display: flex; align-items: center; gap: 1rem; padding: .75rem 1.5rem; background: #fff; border-bottom: 1px solid #e5e7eb; }
+.app-content { padding: 1.5rem; }
+.card { border: 1px solid #e5e7eb; border-radius: .9rem; }
+
+/* ---------- Login / pantallas sin menú ---------- */
+body.bare { background: #f3f4f6; }
+.login-bg { background: radial-gradient(circle at top, #fee2e2 0%, #f3f4f6 55%); }
+.login-card { width: 100%; max-width: 28rem; border-radius: 1.5rem; }
+
+/* ---------- Venta ---------- */
+.qty { width: 9.5rem; margin: 0 auto; }
+.qty input { max-width: 4rem; }
+td .nombre { font-weight: 500; }

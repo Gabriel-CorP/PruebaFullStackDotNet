@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Servicio no disponible";
+    Layout = "_LayoutBare";
+    var detalle = TempData["ApiError"] as string ?? "No se pudo comunicar con el servicio de ventas.";
+}
+<div class="min-vh-100 d-flex align-items-center justify-content-center p-3">
+    <div class="card shadow-sm text-center p-5" style="max-width: 32rem">
+        <i class="bi bi-cloud-slash text-danger display-3 mb-3"></i>
+        <h1 class="h3">Servicio no disponible</h1>
+        <p class="text-muted">@detalle</p>
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Index"><i class="bi bi-arrow-clockwise"></i> Reintentar</a>
+    </div>
+</div>
