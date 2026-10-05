@@ -4,12 +4,12 @@ Prueba técnica: aplicación de ventas con inicio de sesión, mantenimiento de p
 
 La solución tiene **una API REST** (.NET 8) y **dos interfaces web** que consumen la misma API:
 
-| Componente | Tecnología | Carpeta |
-|---|---|---|
-| Base de datos | SQL Server 2022, procedimientos almacenados | `sql/` |
-| API REST | ASP.NET Core Web API (.NET 8), EF Core Database First, CQRS, UnitOfWork, JWT | `src/Ventas.Application`, `src/Ventas.Infrastructure`, `src/Ventas.WebApi` |
-| Aplicación web MVC | ASP.NET Core MVC (.NET 8), Razor, JavaScript, Bootstrap | `src/Ventas.Web` |
-| Aplicación web SPA (opcional) | Angular 19, PrimeNG 19, plantilla Sakai | `ventas-web/` |
+| Componente | Tecnología | Carpeta | URL |
+|---|---|---|---|
+| Base de datos | SQL Server 2022, procedimientos almacenados | `sql/` | |
+| API REST | ASP.NET Core Web API (.NET 8), EF Core Database First, CQRS, UnitOfWork, JWT | `src/Ventas.Application`, `src/Ventas.Infrastructure`, `src/Ventas.WebApi` | |
+| Aplicación web MVC | ASP.NET Core MVC (.NET 8), Razor, JavaScript, Bootstrap | `src/Ventas.Web` | https://webmvcbac-f3d6fbeccdhndtbw.westus3-01.azurewebsites.net/Account/Login |
+| Aplicación web SPA (opcional) | Angular 19, PrimeNG 19, plantilla Sakai | `ventas-front/` | https://purple-flower-0ce50011e.6.azurestaticapps.net/auth/login|
 
 ## 2. Estructura del repositorio
 
