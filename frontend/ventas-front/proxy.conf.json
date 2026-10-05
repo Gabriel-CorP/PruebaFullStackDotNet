@@ -1,6 +1,6 @@
 {
     "/api": {
-        "target": "http://localhost:8080",
+        "target": "https://webapibac-c7ffgfhcdeaph3fq.westus3-01.azurewebsites.net",
         "secure": false,
         "changeOrigin": true
     }

@@ -1,0 +1,58 @@
+name: Compilar e implementar la aplicación de .NET Core en la aplicación web WebMVCBAC
+on:
+  push:
+    branches:
+    - main
+permissions:
+  id-token: write
+  contents: read
+env:
+  AZURE_WEBAPP_NAME: WebMVCBAC
+  AZURE_WEBAPP_PACKAGE_PATH: src\Ventas.Web\published
+  CONFIGURATION: Release
+  DOTNET_CORE_VERSION: 8.0.x
+  WORKING_DIRECTORY: src\Ventas.Web
+jobs:
+  build:
+    environment: WebMVCBAC_Env
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
+    - name: Restore
+      run: dotnet restore "${{ env.WORKING_DIRECTORY }}"
+    - name: Build
+      run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
+    - name: Test
+      run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build
+    - name: Publish
+      run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-build --output "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+    - name: Publish Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: webapp
+        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+  deploy:
+    environment: WebMVCBAC_Env
+    runs-on: windows-latest
+    needs: build
+    steps:
+    - name: Download artifact from build job
+      uses: actions/download-artifact@v4
+      with:
+        name: webapp
+        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        client-id: ${{ vars.WebMVCBAC_CLIENT_ID_0F21 }}
+        tenant-id: ${{ vars.WebMVCBAC_TENANT_ID_E53D }}
+        subscription-id: ${{ vars.WebMVCBAC_SUBSCRIPTION_ID_E53D }}
+    - name: Deploy to Azure WebApp
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
